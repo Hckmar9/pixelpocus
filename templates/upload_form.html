@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Pocus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container py-5">
+    <h1 class="mb-3">Pixel Pocus!</h1>
+    <p>None of your images are saved on any server; everything is deleted; you can see the source code here if you wish to verify this.</p>
+    <form method="post" enctype="multipart/form-data" class="mb-3">
+        <div class="mb-3">
+            <input type="file" class="form-control" name="file" required>
+        </div>
+        <div class="mb-3">
+            <label for="pixel_size" class="form-label">Pixel Size (smaller values = smaller squares):</label>
+            <input type="number" class="form-control" name="pixel_size" min="1" value="16">
+        </div>
+        <button type="submit" class="btn btn-primary">Generate</button>
+        <button type="reset" class="btn btn-secondary">Reset Form</button>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
